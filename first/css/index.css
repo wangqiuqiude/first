@@ -1,0 +1,255 @@
+body{background: #F5F5F5}
+.aside{position: fixed;width: 35px;top: 0;right: 0;background: #383838;padding-top: 8%;height: 100%;z-index: 9999}
+.aside a{display: block;text-align: center;}
+.aside a .iconfont{font: 18px/29px "";color: #fff;font-weight: bold}
+.aside a span{height: 60px;font: 12px/20px "";color: #fff;}
+.aside a b{display: block;width: 21px;height: 15px;background: #dd0000;border-radius: 3px;margin: 0 auto;margin-top:5px;color: #fff;font-weight:bolder}
+.aside a:last-child{position: absolute;top:82%;}
+.aside a:last-child .iconfont{font: 18px/18px "";width: 35px;text-align: center;display: block;height: 18px}
+.aside a:last-child span{font: 12px/12px "";width: 35px;text-align: center;display: block;height: 22px;}
+
+
+.aside .server{padding-top: 50%;}
+.aside .server .iconfont{font: 18px/50px "";color: #fff;}
+/* 头部开始 */
+.heart{width: 1200px;margin: 0 auto;}
+.header{height: 30px;color:#7d7d7d;font: 12px/30px "微软雅黑";}
+.header .left{float: left;padding-left:5px}
+.header .left a:nth-child(2){color: #ff3000;}
+.header .right{float: right;float: right;}
+.header .right .iconfont{font: 12px/30px "微软雅黑";padding-right:10px }
+/* 头部结束 */
+.logo{background: #fff;height: 150px;border-bottom:2px solid black;width: 100%;position: relative;}
+.logo-t{height: 110px;line-height: 110px;position: relative;}
+.logobox a{width: 204px;height: 56px;float: left;display: block;background: url("../image/logo.jpg") no-repeat center;position: absolute;top: 29px;}
+.logo-t .center{width: 466px;height: 42px;border: 2px solid #ffcc00;display: inline-block;position: absolute;left: 320px;top: 36px}
+.logo-t .center span{display: inline-block;height: 42px;width: 72px;font: 12px/42px "";float: left;text-align: center;color: #999}
+.logo-t .center #ipt{float: left;height: 42px;width: 316px;border: 0;border-left: 1px solid #eeeeee}
+.logo-t .center #search{float: right;width: 78px;background: #ffcc00;height: 100%;border: 0;color: #333333;font: 12px/42px ""}
+.logo-t .hot{height: 20px;width: 470px;text-align:center;position: absolute;left: 320px;top: 92px}
+.logo-t .hot a {float: left;height: 20px;font:12px/20px "";margin-right: 10px;}
+.logo-t .call{width: 363px;height: 46px;position: absolute;right: 0;top: 36px}
+.call p{height: 42px;width: 120px;border: 2px solid #ffcc00;float: left;font: 12px/42px "";text-align: center;position: relative;color: #666;background: #f9f9f9;cursor: pointer;}
+.call p .iconfont{font: 22px/42px "";margin-right: 5px}
+.call p b{position: absolute;width: 16px;height: 16px;border-radius:50%;right: 2px;top: 2px;background: #ff5500;font: 12px/16px "";color: #fff}
+.call span{float: right;height: 46px;font: 12px/46px "";}
+.call span .iconfont{color: #ffcc00;font: 32px/46px "";margin-right: 5px}
+.logo-b{height: 40px;position: absolute;bottom: 0;}
+.logo-b .listz{width: 198px;height: 40px;background: #ffcc00;color: #333;font: 16px/40px "";text-align: center;float: left;}
+.listz .iconfont{margin-left: 8px;}
+.logo-b .navlist{width: 822px;height: 100%;padding: 0 14px;float: left;}
+.navlist li{padding: 0 30px;float: left;font: 14px/40px "";font-weight: bolder;letter-spacing: 2px}
+.navlist li:nth-child(1) a{color: #ff3000}
+/* 轮播图 */
+.banner{height: 406px;}
+.banner .col{width: 198px;height: 406px;background: #fff;float: left;}
+.col li{height: 57px;text-align: center;font: 14px/57px "";letter-spacing:2px}
+.col .iconfont{margin-right: 4px;color: #ffcc00;font-weight: bolder}
+.ban{float: right;position: relative;}
+.ban img{width: 1000px;height: 406px;}
+.ban input{width: 20px;height: 80px;z-index: 99999;background: rgba(200,200,200,0.4);position: absolute;top: 163px;border: 0;font-size: 30px;color: #eeeeee}
+.ban #btnL{left: 0;}
+.ban #btnR{position: absolute;right: 0;}
+
+
+/* 今日直播 */
+.live{height: 400px;position: relative;}
+.live .live-t{height: 64px;position: relative;}
+.live-t li{width: 156px;height: 62px;float: left;color: #000}
+.live-t li:nth-child(1) a{border-bottom: 2px solid #ff5500}
+.live-t li a{width: 74px;height: 32px;text-align: center;display: block;margin:0 40px;font:16px/16px "";position: absolute;bottom: 0;font-weight: bolder}
+.live-t li a.fes{width: 104px;height: 30px;background: #ff5500;border-radius: 15px;padding: 0 15px 0 25px;bottom: 9px;font: 16px/30px ""}
+/* 今日直播底部 */
+.live .live-b{height: 335px;border-top: 1px solid #ff5500;background: #fff;}
+
+.live-b li{width: 220px;height: 312px;margin: 10px 0 0 10px;float: left;border: 1px solid #eee;overflow: hidden;position: relative;}
+
+.live-b li a img{width: 220px;height: 220px;display: block}
+.live-b li .goodsName{height: 59px;font:14px/28px "";color: #000;}
+.live-b li .goodsName a{height: 59px;display: block}
+.live-b li .price{height: 23px;padding-left: 5px}
+.live-b li .price .p-after{color: #ff3000;font: 14px/23px "";font-weight: bolder}
+.live-b li .price .p-before{text-decoration: line-through;color: #bbb;font-weight: bold}
+.live b{width: 50px;height: 50px;border-radius: 50%;display: block;background: rgba(200,200,200,0.5);position: absolute;top:175px;font: 30px/50px "";text-align: center;color:rgba(250,250,250,0.4);z-index: 9999;}
+.live #l{left: 0;}
+.live #r{right: 0;}
+.live .live-b li em{position: absolute;right:126px ;top:10px ;width:78px ;height: 25px;background: #999;font: 12px/25px '';text-align: center;color: #fff;}
+.live .live-b li em .iconfont{font: 16px/25px ""}
+.live .live-b li:nth-child(1) em{background: #ff5500;}
+
+
+
+/* 限时抢购 */
+.interval{height:391px;position: relative;}
+.interval em{width: 50px;height: 50px;border-radius: 50%;display: block;background: rgba(200,200,200,0.5);position: absolute;top:175px;font: 30px/50px "";text-align: center;color:rgba(250,250,250,0.4);z-index: 9999;}
+.interval #l{left: 0;}
+.interval #r{right: 0;}
+.inter-t{height: 40px;border-bottom: 1px solid #ff5500;padding-top: 15px}
+.inter-t i{float:left;font:16px/40px "";font-weight: bolder; }
+.inter-t b{width:154px;height:39px;float:right;font:16px/40px "";text-align: center}
+.inter-t b.inter-t-b1{border: 1px solid #ff3000;border-bottom:1px solid #fff;background: #fff;color: #ff3000}
+/* 限时抢购底部 */
+.interval .inter-b{width:100%;height: 335px;background: #fff;}
+
+.inter-b li{width: 220px;height: 312px;margin: 10px 0 0 10px;float: left;border: 1px solid #eee;overflow: hidden;position: relative;}
+
+.inter-b li a img{width: 220px;height: 220px;display: block}
+.inter-b li .goodsName{height: 59px;font:14px/28px "";color: #000;}
+.inter-b li .goodsName a{height: 59px;display: block}
+
+.inter-b li .price{height: 30px;padding-left: 5px;border: #ff5500 solid 1px;}
+.inter-b li .price .p-after{color: #ff3000;font: 14px/30px "";font-weight: bolder;float: left;}
+.inter-b li .price .p-before{text-decoration: line-through;color: #bbb;font-weight: bold;float: left;font: 12px/30px "";}
+.inter-b li .price a{width: 64px;height: 30px;background: #ff5500;float: right;font: 12px/30px "";color: #fff;text-align: center}
+
+
+.live b{width: 50px;height: 50px;border-radius: 50%;display: block;background: rgba(200,200,200,0.5);position: absolute;top:175px;font: 30px/50px "";text-align: center;color:rgba(250,250,250,0.4)}
+.live #l{left: 0;}
+.live #r{right: 0;}
+.live .inter-b li em{position: absolute;right:126px ;top:10px ;width:78px ;height: 25px;background: #999;font: 12px/25px '';text-align: center;color: #fff;}
+.live .inter-b li em .iconfont{font: 16px/25px ""}
+.live .inter-b li:nth-child(1) em{background: #ff5500;}
+
+/* 热门活动 */
+.hot-ac{ 
+    height: 784px;
+}
+.hot-ac .hot-t{
+height: 40px;
+border-bottom: 2px solid #000;
+font: 16px/40px "";
+font-weight: bolder
+}
+/* 热门尾部*/
+.hot-b{height: 742px;padding-bottom: 10px;}
+.hot-b li{width: 595px;height: 240px;padding: 10px 0 0 10px;float: left;}
+.hot-b img{width: 595px;height: 240px;display: block}
+.hot-b li:nth-child(odd){padding-left:0}
+
+/*最新商品 */
+.new{height: 611px;padding: 6px 0 12px 0;}
+.new .new-t{height: 39px;border-bottom: 2px solid #000;font: 16px/39px "";font-weight: bolder}
+.new .new-t span{float: left;}
+.new .new-t i{float: right;}
+/* 最新商品头部结束 */
+.new-b{height: 550px;padding: 10px 0;}
+.new-b .new-b-l{width: 290px;float: left;margin-right: 10px;position: relative;}
+.new-b-l b.iconfont{position: absolute;top: 0;left: 0;color: #888e91;font-size: 40px}
+.new-b-l b#il{top:255px;}
+.new-b-l b#ir{top:250px;left: 250px;}
+.new-b .new-b-l img{height: 550px;width: 290px;display: block;margin-top: 5px}
+.new-b .new-b-r li{margin: 5px 0 0 5px;float: left;width: 218px;height: 270px;padding-bottom: 11px}
+.new-b .new-b-r li a {}
+.new-b .new-b-r li a img{width: 218px;height: 203px;display: block}
+.new-b .new-b-r li .newGoods{margin-top: 2px;height:43px;font: 12px/22px ""}
+.new-b .new-b-r li span{display: block;font-size: 16px;color:#ff3000;font-weight: bolder }
+
+/* 家纺用品 */
+.textiles{height: 617px;}
+.textiles .textiles-t{font: 16px/39px "";font-weight: bolder;padding-top: 14px;height: 39px;border-bottom: 2px solid #000;}
+/* .textiles .textiles-t span{float: left;} */
+.textiles .textiles-t i{float: right;}
+.textiles .textiles-b{padding-top: 5px}
+.textiles-b-l{width: 290px;height:554px;float: left;margin-top: 5px;position: relative;}
+.textiles-b-l a{width: 290px;height: 350px;padding-top: 5px}
+.textiles-b-l a .iconfont{position: absolute;top: 0;left: 0;color: #d6e7bd;font-size: 40px}
+.textiles-b-l a #il{top:155px;}
+.textiles-b-l a #ir{top:150px;left: 250px;}
+.textiles-b-l a img{width: 290px;height: 350px;display: block}
+
+.textiles-b-list{width: 290px;height:202px;background: #fff}
+.textiles-b-list p{width: 95px;height: 100px;border-left: 1px solid #eee;border-bottom: 1px solid #eee;float: left;}
+
+.textiles-b-list p .iconfont{color: #5fc404;font: 36px/70px "";text-align: center;display: block}
+.textiles-b-list p span{font: 14px/30px "";display: block;text-align: center}
+.textiles-b-list p.active{background: #f4f4f4}
+
+/* 家纺用品右侧*/
+.textiles-b-r{float: right;width: 900px;}
+.textiles-b-r li{margin: 5px 0 0 5px;float: left;width: 218px;height: 270px;border: 1px solid #fff}
+/* .textiles-b-r li a {float: left;} */
+.textiles-b-r li a img{width: 218px;height: 203px;display: block}
+.textiles-b-r li .bedGoods a{display:block;margin-top: 2px;height:43px;font: 12px/22px ""}
+.textiles-b-r li span{display: block;font-size: 16px;color:#ff3000;font-weight: bolder }
+
+/* 小星星开始 */
+.star{height: 35px;padding:10px 0;background: #fff;margin-top: 6px}
+.star ul{height:35px;}
+.star ul li{float: left;width: 109px;height: 35px;border-right: 1px dashed #ccc;margin-left: -1px}
+.star ul li a{display:block;width: 108px;height: 35px;}
+.star ul li a img{width: 70px;height: 35px;margin: 0 auto;display: block}
+.star ul .lastli{border: 0}
+/* 小星星下面 */
+.starAfter{height: 130px;padding-top: 10px;}
+.starAfter a{float: left;}
+.starAfter a.a-las img{padding-right: 0}
+.starAfter a img{width: 393px;height: 130px;display: block;padding-right: 10px}
+
+
+/* 家用电器 */
+
+.electric{height: 617px;}
+.electric .electric-t{font: 16px/39px "";font-weight: bolder;padding-top: 14px;height: 39px;border-bottom: 2px solid #000;}
+/* .electric .electric-t span{float: left;} */
+.electric .electric-t i{float: right;}
+.electric .electric-b{padding-top: 5px}
+.electric-b-l{width: 290px;height:554px;float: left;margin-top: 5px;position: relative;}
+.electric-b-l a{width: 290px;height: 350px;padding-top: 5px;}
+.electric-b-l a .iconfont{position: absolute;top: 0;left: 0;color: #c1e3f8;font-size: 40px}
+.electric-b-l a #il{top:155px;}
+.electric-b-l a #ir{top:150px;left: 250px;}
+.electric-b-l a img{width: 290px;height: 350px;display: block}
+.electric-b-list{width: 290px;height:202px;background: #fff}
+.electric-b-list p{width: 95px;height: 100px;border-left: 1px solid #eee;border-bottom: 1px solid #eee;float: left;}
+
+.electric-b-l .electric-b-list p .iconfont{color: #5fc404;font: 36px/70px "";text-align: center;display: block}
+.electric-b-list p span{font: 14px/30px "";display: block;text-align: center}
+.electric-b-list p.active{background: #f4f4f4}
+
+/* 家纺用品右侧*/
+.electric-b-r{float: right;width: 900px;}
+.electric-b-r li{margin: 5px 0 0 5px;float: left;width: 218px;height: 270px;border: 1px solid #fff}
+/* .electric-b-r li a {float: left;} */
+.electric-b-r li a img{width: 218px;height: 203px;display: block}
+.electric-b-r li .elec a{display:block;margin-top: 2px;height:43px;font: 12px/22px ""}
+.electric-b-r li span{display: block;font-size: 16px;color:#ff3000;font-weight: bolder }
+
+/* 小星星开始 */
+.elecstar{height: 35px;padding:10px 0;background: #fff;margin-top: 6px}
+.elecstar ul{height:35px;}
+.elecstar ul li{float: left;width: 109px;height: 35px;border-right: 1px dashed #ccc;margin-left: -1px}
+.elecstar ul li a{display:block;width: 108px;height: 35px;}
+.elecstar ul li a img{width: 70px;height: 35px;margin: 0 auto;display: block}
+.elecstar ul .lastli{border: 0}
+/* 小星星下面 */
+.elecstarAfter{height: 130px;padding-top: 10px;}
+.elecstarAfter a{float: left;}
+.elecstarAfter a.a-las img{padding-right: 0}
+.elecstarAfter a img{width: 393px;height: 130px;display: block;padding-right: 10px}
+/* 正品保证 */
+.quality{height: 85px;background: #f7f7f7}
+.quality li{width: 200px;height: 85px;padding: 0 50px;float: left;}
+.quality li .iconfont{float: left;font:48px/85px "";color: #ff5500; }
+.quality li p {float:right;height: 85px;}
+.quality li p span{font-size: 12px;color: #999999}
+.quality li p .qua{font: 16px/56px "";color: #666;}
+/* 购物指南 */
+.guide{height: 181px;padding: 20px 0;border-bottom: 1px solid #999;background: #fff}
+.guide .guide-l{width: 790px;height: 181px;padding-left: 50px;float: left;}
+.guide .guide-l li{width: 134px;padding-left: 24px;float: left;}
+.guide-l li h2{font-weight: bolder;}
+.guide-l li  a{font: 12px/24px "";display: block}
+.guide-r{float: right;}
+.guide-r a{width: 130px;height: 155px;float: left;margin-left: 20px}
+.guide-r a img{width: 130px;height: 130px;display: block}
+.guide-r a span{font: 12px/30px "";text-align: center;display: block;width: 130px;color: #999999}
+/* footer */
+.footer{height: 234px;background: #fff}
+.footer .foot-t{width:100%;height: 59px;font: 12px/59px "";margin:0 auto;text-align: center}
+.footer .foot-b{text-align: center}
+.footer .foot-b p{font:12px/17px ""}
+.footer .foot-b p:last-child img{width: 50px;height: 66px;display: block;margin: 0 auto}
+.footer .foot-b p:nth-child(5) img{width: 18px;height: 18px;}
+
+
+
