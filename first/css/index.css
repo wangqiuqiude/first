@@ -13,11 +13,11 @@ body{background: #F5F5F5}
 .aside .server .iconfont{font: 18px/50px "";color: #fff;}
 /* 头部开始 */
 .heart{width: 1200px;margin: 0 auto;}
-.header{height: 30px;color:#7d7d7d;font: 12px/30px "微软雅黑";}
-.header .left{float: left;padding-left:5px}
-.header .left a:nth-child(2){color: #ff3000;}
-.header .right{float: right;float: right;}
-.header .right .iconfont{font: 12px/30px "微软雅黑";padding-right:10px }
+.head{height: 30px;color:#7d7d7d;font: 12px/30px "微软雅黑";}
+.head .left{float: left;padding-left:5px}
+.head .left a:nth-child(2){color: #ff3000;}
+.head .right{float: right;float: right;}
+.head .right .iconfont{font: 12px/30px "微软雅黑";padding-right:10px }
 /* 头部结束 */
 .logo{background: #fff;height: 150px;border-bottom:2px solid black;width: 100%;position: relative;}
 .logo-t{height: 110px;line-height: 110px;position: relative;}
@@ -217,7 +217,7 @@ font-weight: bolder
 /* 小星星开始 */
 .elecstar{height: 35px;padding:10px 0;background: #fff;margin-top: 6px}
 .elecstar ul{height:35px;}
-.elecstar ul li{float: left;width: 109px;height: 35px;border-right: 1px dashed #ccc;margin-left: -1px}
+.elecstar ul li{float: left;width: 109px;height: 35px;border-right: 1px dashed #eee;margin-left: -1px}
 .elecstar ul li a{display:block;width: 108px;height: 35px;}
 .elecstar ul li a img{width: 70px;height: 35px;margin: 0 auto;display: block}
 .elecstar ul .lastli{border: 0}
@@ -229,17 +229,17 @@ font-weight: bolder
 /* 正品保证 */
 .quality{height: 85px;background: #f7f7f7}
 .quality li{width: 200px;height: 85px;padding: 0 50px;float: left;}
-.quality li .iconfont{float: left;font:48px/85px "";color: #ff5500; }
-.quality li p {float:right;height: 85px;}
+.quality li .iconfont{float: left;font:48px/85px "";color: #ff5500;margin-right: 13px }
+.quality li p {float:left;height: 85px;}
 .quality li p span{font-size: 12px;color: #999999}
 .quality li p .qua{font: 16px/56px "";color: #666;}
 /* 购物指南 */
-.guide{height: 181px;padding: 20px 0;border-bottom: 1px solid #999;background: #fff}
+.guide{height: 181px;padding: 20px 0;border-bottom: 1px solid #ccc;background: #fff}
 .guide .guide-l{width: 790px;height: 181px;padding-left: 50px;float: left;}
 .guide .guide-l li{width: 134px;padding-left: 24px;float: left;}
 .guide-l li h2{font-weight: bolder;}
 .guide-l li  a{font: 12px/24px "";display: block}
-.guide-r{float: right;}
+.guide-r{float: left;}
 .guide-r a{width: 130px;height: 155px;float: left;margin-left: 20px}
 .guide-r a img{width: 130px;height: 130px;display: block}
 .guide-r a span{font: 12px/30px "";text-align: center;display: block;width: 130px;color: #999999}
