@@ -12,14 +12,43 @@
 .main-r-b{padding: 35px 18px 15px 49px;width: 307px;height: 413px;box-sizing: border-box;}
 .info{width: 350px;height: 40px;border: 1px solid #ddd;position: relative; color: #ccc;margin-bottom: 20px;border-radius: 2px}
 .info .iconfont{font: 24px/40px "";float: left;width: 35px;text-align: center;}
-.info input{width: 170px;height: 28px;border:0;border-left: 1px solid #ccc;position: absolute;top: 6px;color: #ccc;}
+.info input{width: 315px;height: 28px;border:0;border-left: 1px solid #ccc;position: absolute;top: 6px;color: #ccc;outline-style: none}
 .main-r-b .three{width: 350px;height: 40px;position: relative; margin-bottom: 20px;}
-.main-r-b .three .rando {width: 106px;height: 30px;position: relative;}
-.main-r-b .three .rando b{background: #ccc;left:168px;top: 7px;font:22px/30px "";text-align: center}
+.main-r-b .three .rando {width: 106px;height: 30px;}
+.main-r-b .three .rando b{background: #ccc;left:168px;top: 7px;position: absolute;font:22px/30px "";text-align: center}
 .main-r-b .three .info{width: 150px;float: left;margin-bottom:0;}
 .main-r-b .three .info input{width: 84px;}
-.main-r-b .three .rando em{color: #fb5809;position: absolute;right: 0;top: 14px}
-.main-r-b .checkbox{height: 12px;width:406px;color: #000}
+.main-r-b .three .rando em{color: #fb5809;position: absolute;right:70px;top: 14px}
+.main-r-b .checkbox{height: 12px;width:406px;padding-bottom: 16px}
 .main-r-b .checkbox span{vertical-align: middle;float: left;}
 .main-r-b .checkbox input{vertical-align: middle;float: left;}
 .main-r-b .checkbox i{vertical-align: middle;float: right;}
+.loginicon{width: 350px;height: 40px;background: #ff5500;font: 18px/40px "";text-align: center;letter-spacing: 15px;}
+.loginicon a{color: #fff;}
+.other{width: 408px;padding-top: 14px}
+.other a img{width:18px;height: 18px;}
+.other p{float: right;}
+/* 正品保证 */
+.quality{height: 85px;background: #f7f7f7}
+.quality li{width: 200px;height: 85px;padding: 0 50px;float: left;}
+.quality li .iconfont{float: left;font:48px/85px "";color: #ff5500;margin-right: 13px }
+.quality li p {float:left;height: 85px;}
+.quality li p span{font-size: 12px;color: #999999}
+.quality li p .qua{font: 16px/56px "";color: #666;}
+/* 购物指南 */
+.guide{height: 181px;padding: 20px 0;border-bottom: 1px solid #ccc;background: #fff}
+.guide .guide-l{width: 790px;height: 181px;padding-left: 50px;float: left;}
+.guide .guide-l li{width: 134px;padding-left: 24px;float: left;}
+.guide-l li h2{font-weight: bolder;}
+.guide-l li  a{font: 12px/24px "";display: block}
+.guide-r{float: left;}
+.guide-r a{width: 130px;height: 155px;float: left;margin-left: 20px}
+.guide-r a img{width: 130px;height: 130px;display: block}
+.guide-r a span{font: 12px/30px "";text-align: center;display: block;width: 130px;color: #999999}
+/* footer */
+.footer{height: 234px;background: #fff}
+.footer .foot-t{width:100%;height: 59px;font: 12px/59px "";margin:0 auto;text-align: center}
+.footer .foot-b{text-align: center}
+.footer .foot-b p{font:12px/17px ""}
+.footer .foot-b p:last-child img{width: 50px;height: 66px;display: block;margin: 0 auto}
+.footer .foot-b p:nth-child(5) img{width: 18px;height: 18px;}

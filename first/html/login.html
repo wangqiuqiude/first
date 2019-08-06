@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="header heart">
-        <a href="index.html"></a>
+        <a href="##"></a>
         <span>登录</span>
     </div>
     <div class="main heart">
@@ -28,7 +28,7 @@
                 </div>
                 <div class="info">
                     <i class="iconfont">&#xe610;</i>
-                    <input type="text" value="请输入密码">
+                    <input type="password" value="请输入密码">
                 </div>
                 <div class="three">
                     <div class="info">
@@ -45,9 +45,26 @@
                     <span>记住用户</span>
                     <i>忘记密码?</i>
                 </div>
-                
+                <div class="loginicon">
+                    <a href="##">登录</a>
+                </div>
+                <div class="other">
+                    <span>其他账号登录：</span>
+                    <a href="##"><img src="../image/qq.png" alt=""></a>
+                    <a href="##"><img src="../image/wx.png" alt=""></a>
+                    <p>快速注册>></p>
+                </div>
             </div>
         </div>
     </div>
+    <div class="quality heart"></div>
+    <div class="guide heart"></div>
+    <div class="footer heart"></div>
 </body>
+<script src="../js/jquery1.12.4.js"></script>
+<script>
+    $(".quality").load("http://localhost/wjl/load/load.html .quality");
+    $(".guide").load("http://localhost/wjl/load/load.html .guide");    
+    $(".footer").load("http://localhost/wjl/load/load.html .footer");   
+</script>
 </html>

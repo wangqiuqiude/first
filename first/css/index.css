@@ -23,9 +23,19 @@ body{background: #F5F5F5}
 .logo-t{height: 110px;line-height: 110px;position: relative;}
 .logobox a{width: 204px;height: 56px;float: left;display: block;background: url("../image/logo.jpg") no-repeat center;position: absolute;top: 29px;}
 .logo-t .center{width: 466px;height: 42px;border: 2px solid #ffcc00;display: inline-block;position: absolute;left: 320px;top: 36px}
-.logo-t .center span{display: inline-block;height: 42px;width: 72px;font: 12px/42px "";float: left;text-align: center;color: #999}
-.logo-t .center #ipt{float: left;height: 42px;width: 316px;border: 0;border-left: 1px solid #eeeeee}
-.logo-t .center #search{float: right;width: 78px;background: #ffcc00;height: 100%;border: 0;color: #333333;font: 12px/42px ""}
+.logo-t .center span{cursor:pointer;display: inline-block;height: 42px;width: 72px;font: 14px/42px "";float: left;text-align: center;color: #999;}
+.logo-t .center i{font: 12px/42px "";text-align: center;color: #999;position: absolute;left: 50px;cursor: pointer;}
+
+.logo-t .opt{width: 55px;height: 50px;padding: 0 5px;position: absolute;top: 76px;left: 325px;background: #fff;z-index: 1;display:none}
+.logo-t .opt li{height: 25px;font: 12px/25px "";text-align: center}
+/* .logo-t .opt li:hover{background: #ccc} */
+/* .logo-t .opt .active{background: #ccc} */
+
+
+
+
+.logo-t .center #ipt{float: left;height: 42px;width: 316px;border: 0;border-left: 1px solid #eeeeee;outline: none;color: #ccc;}
+.logo-t .center #search{float: right;width: 78px;background: #ffcc00;height: 100%;border: 0;color: #333333;font: 14px/42px "";font-weight: 700;outline-style: none;cursor: pointer;}
 .logo-t .hot{height: 20px;width: 470px;text-align:center;position: absolute;left: 320px;top: 92px}
 .logo-t .hot a {float: left;height: 20px;font:12px/20px "";margin-right: 10px;}
 .logo-t .call{width: 363px;height: 46px;position: absolute;right: 0;top: 36px}
@@ -39,17 +49,30 @@ body{background: #F5F5F5}
 .listz .iconfont{margin-left: 8px;}
 .logo-b .navlist{width: 822px;height: 100%;padding: 0 14px;float: left;}
 .navlist li{padding: 0 30px;float: left;font: 14px/40px "";font-weight: bolder;letter-spacing: 2px}
-.navlist li:nth-child(1) a{color: #ff3000}
+.navlist li:nth-child(1) .aaa{color: #ff3000}
 /* 轮播图 */
 .banner{height: 406px;}
-.banner .col{width: 198px;height: 406px;background: #fff;float: left;}
-.col li{height: 57px;text-align: center;font: 14px/57px "";letter-spacing:2px}
+.banner .col{width: 198px;height: 406px;background: #fff;float: left;position: relative;}
+.col li{height: 57px;text-align: center;font: 14px/57px "";letter-spacing:2px;}
 .col .iconfont{margin-right: 4px;color: #ffcc00;font-weight: bolder}
-.ban{float: right;position: relative;}
-.ban img{width: 1000px;height: 406px;}
+
+.col li .hidelist{width:1002px;height:406px;float: right;position:absolute;background:#f5f5f5;z-index:  1111111;left: 198px;top: 0;display: none}
+.hidelist .hidelist-l{width: 790px;height: 100%;background: #fff;float: left;margin-right:10px}
+.hidelist .hidelist-l h3{float: left;}
+.hidelist .hidelist-l span{float: left;}
+.hidelist .hidelist-r{width: 200px;height: 240px;background: #fff;float: right;margin-top: 10px}
+.ban{width:1002px;height:406px;float: right;position: relative;overflow: hidden;}
+.ban img{width: 1000px;height: 406px;position: absolute;left:1000px;top: 0}
+.ban img:nth-child(1){position: absolute;left:0;top: 0}
 .ban input{width: 20px;height: 80px;z-index: 99999;background: rgba(200,200,200,0.4);position: absolute;top: 163px;border: 0;font-size: 30px;color: #eeeeee}
 .ban #btnL{left: 0;}
 .ban #btnR{position: absolute;right: 0;}
+
+
+
+
+
+
 
 
 /* 今日直播 */
@@ -58,11 +81,24 @@ body{background: #F5F5F5}
 .live-t li{width: 156px;height: 62px;float: left;color: #000}
 .live-t li:nth-child(1) a{border-bottom: 2px solid #ff5500}
 .live-t li a{width: 74px;height: 32px;text-align: center;display: block;margin:0 40px;font:16px/16px "";position: absolute;bottom: 0;font-weight: bolder}
-.live-t li a.fes{width: 104px;height: 30px;background: #ff5500;border-radius: 15px;padding: 0 15px 0 25px;bottom: 9px;font: 16px/30px ""}
-/* 今日直播底部 */
-.live .live-b{height: 335px;border-top: 1px solid #ff5500;background: #fff;}
+.live-t li a.fes{width: 104px;height: 30px;background: #ff5500;border-radius: 15px;padding: 0 15px 0 25px;bottom: 9px;font: 16px/30px "";color: #fff;}
 
+
+
+
+
+
+
+
+/* 今日直播底部 */
+.live .live-b{height: 335px;border-top: 1px solid #ff5500;background: #fff;position: absolute}
+.live .live-b.today2{}
+.live .live-b.yester2{display: none}
 .live-b li{width: 220px;height: 312px;margin: 10px 0 0 10px;float: left;border: 1px solid #eee;overflow: hidden;position: relative;}
+
+
+
+
 
 .live-b li a img{width: 220px;height: 220px;display: block}
 .live-b li .goodsName{height: 59px;font:14px/28px "";color: #000;}
@@ -76,9 +112,6 @@ body{background: #F5F5F5}
 .live .live-b li em{position: absolute;right:126px ;top:10px ;width:78px ;height: 25px;background: #999;font: 12px/25px '';text-align: center;color: #fff;}
 .live .live-b li em .iconfont{font: 16px/25px ""}
 .live .live-b li:nth-child(1) em{background: #ff5500;}
-
-
-
 /* 限时抢购 */
 .interval{height:391px;position: relative;}
 .interval em{width: 50px;height: 50px;border-radius: 50%;display: block;background: rgba(200,200,200,0.5);position: absolute;top:175px;font: 30px/50px "";text-align: center;color:rgba(250,250,250,0.4);z-index: 9999;}
