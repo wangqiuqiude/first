@@ -1,0 +1,25 @@
+.heart{width:1200px;margin: 0 auto }
+.header{height: 120px;position: relative;}
+.header a{width: 204px;height: 90px;display: block;background: url("../image/logo.jpg") no-repeat center;float: left;position: absolute;top: 15px}
+.header span{width: 60px;font: 30px/40px "";float:left;position: absolute;top: 40px;left: 242px;font-weight: 300}
+.main{height: 414px;}
+.main a img{height: 410px;width: 700px;}
+.main-r{width: 480px;height: 405px;border: 1px solid #ddd;float: right;}
+.main-r-t{height: 50px;border-bottom: 1px solid #ddd;padding: 0 10px 0 20px;}
+.main-r-t p{font: 16px/50px "";color: #000}
+.main-r-t p:nth-child(1){width: 65px;float: left;color: #ffc001;font-weight: 700;padding: 0 69px;border-right: 1px solid #ddd}
+.main-r-t p:nth-child(2){width: 112px;float: right;padding: 0 67px}
+.main-r-b{padding: 35px 18px 15px 49px;width: 307px;height: 413px;box-sizing: border-box;}
+.info{width: 350px;height: 40px;border: 1px solid #ddd;position: relative; color: #ccc;margin-bottom: 20px;border-radius: 2px}
+.info .iconfont{font: 24px/40px "";float: left;width: 35px;text-align: center;}
+.info input{width: 170px;height: 28px;border:0;border-left: 1px solid #ccc;position: absolute;top: 6px;color: #ccc;}
+.main-r-b .three{width: 350px;height: 40px;position: relative; margin-bottom: 20px;}
+.main-r-b .three .rando {width: 106px;height: 30px;position: relative;}
+.main-r-b .three .rando b{background: #ccc;left:168px;top: 7px;font:22px/30px "";text-align: center}
+.main-r-b .three .info{width: 150px;float: left;margin-bottom:0;}
+.main-r-b .three .info input{width: 84px;}
+.main-r-b .three .rando em{color: #fb5809;position: absolute;right: 0;top: 14px}
+.main-r-b .checkbox{height: 12px;width:406px;color: #000}
+.main-r-b .checkbox span{vertical-align: middle;float: left;}
+.main-r-b .checkbox input{vertical-align: middle;float: left;}
+.main-r-b .checkbox i{vertical-align: middle;float: right;}
