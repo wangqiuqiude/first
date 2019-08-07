@@ -24,16 +24,16 @@
             <div class="main-r-b">
                 <div class="info">
                     <i class="iconfont">&#xe63a;</i>
-                    <input type="text" value=" 请输入用户名/手机号码/邮箱">
+                    <input type="text" value="请输入用户名/邮箱/手机号" name="" id="user">
                 </div>
                 <div class="info">
                     <i class="iconfont">&#xe610;</i>
-                    <input type="password" value="请输入密码">
+                    <input type="password" value="请输入密码" name="" id="pass">
                 </div>
                 <div class="three">
                     <div class="info">
                         <i class="iconfont">&#xe600;</i>
-                        <input type="text" value="请输入验证码">
+                        <input type="text" value="请输入验证码" name="">
                     </div>
                     <div class="rando">
                         <b>2 4 5 2</b>
@@ -45,14 +45,14 @@
                     <span>记住用户</span>
                     <i>忘记密码?</i>
                 </div>
-                <div class="loginicon">
-                    <a href="##">登录</a>
+                <div class="loginicon" id="btn">
+                    登录
                 </div>
                 <div class="other">
                     <span>其他账号登录：</span>
                     <a href="##"><img src="../image/qq.png" alt=""></a>
                     <a href="##"><img src="../image/wx.png" alt=""></a>
-                    <p>快速注册>></p>
+                    <a href="./register.html"><p>快速注册>></p></a>
                 </div>
             </div>
         </div>
@@ -63,6 +63,61 @@
 </body>
 <script src="../js/jquery1.12.4.js"></script>
 <script>
+
+
+class Login{
+        constructor(){
+            this.url = "http://api.icodeilife.cn:81/user";
+            this.user = $("#user");
+            this.pass = $("#pass");
+            this.btn = $("#btn");
+            this.p = $(".other").find("p");
+            this.addEvent();
+        }
+        addEvent(){
+            var that = this;
+            this.btn.click(function(){
+                that.load();
+            })
+        }
+        load(){
+            $.ajax({
+                url:this.url,
+                data:{
+                    type:"login",
+                    user:this.user.val(),
+                    pass:this.pass.val()
+                },
+                success:(res)=>{
+                    this.res = JSON.parse(res);
+                    // console.log(res);
+                    if(this.res.code == 0 ){
+                        this.p.html("<a href='register.html'>不存在此用户名，请点此处注册</a>").css({
+                            background:"gold",
+                            font:"18px/18px ''",
+                        })
+                    }else if(this.res.code == 1){
+                        this.setstate();
+                        this.p.html("登录成功！5秒后跳转到<a href='index.html'>首页</a>");
+                        setTimeout(()=>{
+                            location.href = "index.html";
+                        },5000)
+                    }else if(this.res.code == 2){
+                        this.p.html("用户名密码不匹配，请重新<a href='login.html'>登陆</a>")
+                    }
+                    
+                },
+                
+            })
+        }
+        setstate(){
+            localStorage.setItem("info",JSON.stringify(this.res.msg));
+        }
+    }
+    new Login();
+
+
+    
     $(".quality").load("http://localhost/wjl/load/load.html .quality");
     $(".guide").load("http://localhost/wjl/load/load.html .guide");    
     $(".footer").load("http://localhost/wjl/load/load.html .footer");   

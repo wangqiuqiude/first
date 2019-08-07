@@ -5,28 +5,35 @@
 .main{height: 414px;}
 .main a img{height: 410px;width: 700px;}
 .main-r{width: 480px;height: 405px;border: 1px solid #ddd;float: right;}
-.main-r-t{height: 50px;border-bottom: 1px solid #ddd;padding: 0 10px 0 20px;}
-.main-r-t p{font: 16px/50px "";color: #000}
-.main-r-t p:nth-child(1){width: 65px;float: left;color: #ffc001;font-weight: 700;padding: 0 69px;border-right: 1px solid #ddd}
-.main-r-t p:nth-child(2){width: 112px;float: right;padding: 0 67px}
-.main-r-b{padding: 35px 18px 15px 49px;width: 307px;height: 413px;box-sizing: border-box;}
-.info{width: 350px;height: 40px;border: 1px solid #ddd;position: relative; color: #ccc;margin-bottom: 20px;border-radius: 2px}
-.info .iconfont{font: 24px/40px "";float: left;width: 35px;text-align: center;}
-.info input{width: 315px;height: 28px;border:0;border-left: 1px solid #ccc;position: absolute;top: 6px;color: #ccc;outline-style: none}
+.main-r .main-r-t{height: 50px;border-bottom: 1px solid #ddd;padding: 0 10px 0 20px;font: 16px/50px "";color: #ffc001;font-weight: 700;text-align: center}
+
+
+
+.main-r-b{padding: 6px 18px 15px 49px;width: 307px;height: 413px;box-sizing: border-box;}
+/* .info{width: 350px;height: 40px;border: 1px solid #ddd;position: relative; color: #ccc;margin-bottom: 20px;border-radius: 2px;}
+.info .iconfont{font: 24px/40px "";float: left;width: 35px;text-align: center;} */
+.haha{width:350px;height: 40px;border: 1px solid #ddd;position: relative; color: #ccc;margin-bottom: 5px;border-radius: 2px;outline-style: none;display: inline-block}
 .main-r-b .three{width: 350px;height: 40px;position: relative; margin-bottom: 20px;}
 .main-r-b .three .rando {width: 106px;height: 30px;}
 .main-r-b .three .rando b{background: #ccc;left:168px;top: 7px;position: absolute;font:22px/30px "";text-align: center}
 .main-r-b .three .info{width: 150px;float: left;margin-bottom:0;}
-.main-r-b .three .info input{width: 84px;}
+.main-r-b .three .haha{width: 84px;}
 .main-r-b .three .rando em{color: #fb5809;position: absolute;right:70px;top: 14px}
 .main-r-b .checkbox{height: 12px;width:406px;padding-bottom: 16px}
 .main-r-b .checkbox span{vertical-align: middle;float: left;}
 .main-r-b .checkbox input{vertical-align: middle;float: left;}
 .main-r-b .checkbox i{vertical-align: middle;float: right;}
-.loginicon{width: 350px;height: 40px;background: #ff5500;font: 18px/40px "";text-align: center;color: #fff;letter-spacing: 15px;cursor: pointer;}
+
+
+
+
+.main-r-b .other{width: 408px;padding-top: 14px}
+.other p{float: right;color: #aaa}
+.loginicon{width: 350px;height: 40px;background: #ff5500;font: 18px/40px "";text-align: center;letter-spacing: 15px;}
+.loginicon a{color: #fff;}
 .other{width: 408px;padding-top: 14px}
 .other a img{width:18px;height: 18px;}
-.other p{float: right;color: #aaa}
+.other p{float: right;}
 /* 正品保证 */
 .quality{height: 85px;background: #f7f7f7}
 .quality li{width: 200px;height: 85px;padding: 0 50px;float: left;}

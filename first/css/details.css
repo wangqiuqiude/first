@@ -1,0 +1,15 @@
+.middle{height: 550px;background: #fff;position: relative;}
+.left{width: 600px;float: left;}
+.s_box{width: 300px;height: 300px;position: absolute;left: 50px;top: 50px}
+        .s_box span{position: absolute;left: 0;top: 0;background: rgba(200,200,200,0.6);display: none} 
+        .s_box img{width:300px;height:300px;position: absolute}
+        .b_box{width: 300px;height: 300px;position: absolute;left: 500px;top: 50px;display: none;overflow: hidden; }
+        .b_box img{width:900px;position: absolute;}
+
+        .x_box{
+            position: absolute;left: 50px;top: 390px;
+            width: 400px;height: 150px;
+        }
+        .x_box img{
+            width: 110px;height: 120px;margin: 10px;
+        }

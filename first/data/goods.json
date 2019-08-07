@@ -1,37 +1,41 @@
 ﻿[
-	{
-				"price":"100",
-				"oldprice":"100",
+	{			"word":"正在直播",
+				"price":"¥1860.00",
+				"oldprice":"¥1980.00",
 				"url":"../image/a.jpg",
 				"goodsId":"dsfkmewd",
 	            "tip":"“皇家珍藏”蜜蜡项链豪华套组"
 	},
 	{
-		"price":"100",
-		"oldprice":"100",
-		"url":"../image/a.jpg",
+		"word":"&#xe602;13:01",
+		"price":"¥499.00",
+		"oldprice":"¥599.00",
+		"url":"../image/b.jpg",
 		"goodsId":"dsfkmewd",
-		"tip":"“皇家珍藏”蜜蜡项链豪华套组"
+		"tip":"澳乐维他ENERVITE银杏健脑胶囊8瓶装"
 	},
 	{
-		"price":"100",
-		"oldprice":"100",
-		"url":"../image/a.jpg",
+		"word":"&#xe602;13:01",
+		"price":"¥1230.00",
+		"oldprice":"¥1280.00",
+		"url":"../image/c.jpg",
 		"goodsId":"dsfkmewd",
-		"tip":"“皇家珍藏”蜜蜡项链豪华套组"
+		"tip":"招财进宝和田碧玉挂件"
 	},
 	{
-		"price":"100",
-		"oldprice":"100",
-		"url":"../image/a.jpg",
+		"word":"&#xe602;13:01",
+		"price":"¥1860.00",
+		"oldprice":"¥1880.00",
+		"url":"../image/d.jpg",
 		"goodsId":"dsfkmewd",
-		"tip":"“皇家珍藏”蜜蜡项链豪华套组"
+		"tip":"开诚澳大利亚进口头层牛皮席年中庆家家直供组"
 	},
 	{
-	"price":"100",
-	"oldprice":"100",
-	"url":"../image/a.jpg",
+	"word":"&#xe602;13:01",
+	"price":"¥1940.00",
+	"oldprice":"¥1980.00",
+	"url":"../image/e.jpg",
 	"goodsId":"dsfkmewd",
-	"tip":"“皇家珍藏”蜜蜡项链豪华套组"
+	"tip":"鸿福齐天首饰套组"
 	}
 ]

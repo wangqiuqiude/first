@@ -7,7 +7,7 @@
     <title>用户注册</title>
     <link rel="stylesheet" href="../font_1328363_gkljrm9wtfn/iconfont.css">
     <link rel="stylesheet" href="../css/public.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/register.css">
 </head>
 <body>
     <div class="header heart">
@@ -17,36 +17,34 @@
     <div class="main heart">
         <a href="./register"><img src="../image/logobanner.jpg" alt=""></a>
         <div class="main-r">
-            <div class="main-r-t">
-                <p>普通注册</p>
+            <div class="main-r-t">普通注册
             </div>
             <div class="main-r-b">
-                手机号码：<div class="info">
-                    <input type="text" value=" 请输入用户名/手机号码/邮箱">
-                </div>
-                密码：<div class="info">
-                    <input type="password" value="">
-                </div>
-                确认密码：<div class="info">
-                    <input type="password" value="">
-                </div>
+                手机号码：
+                    <input type="text" value=" 请输入用户名/手机号码/邮箱" class="haha" id="user">
+                密码：
+                    <input type="password" value="" class="haha" id="pass">
+                确认密码：
+                    <input type="password" value="" class="haha" id="repeat">
+                
                 <div class="three">
-                    图片验证码：<div class="info">
-                        <i class="iconfont">&#xe600;</i>
-                        <input type="text" value="请输入验证码">
-                    </div>
+                    图片验证码：
+                        <input type="text"   class="haha">
+                  
                     <div class="rando">
                         <b>2 4 5 2</b>
                         <em>换一张</em>
                     </div>
                 </div>
                 <div class="checkbox">
-                    <input type="checkbox" value="记住用户" name="">
+                    <input type="checkbox" value="" name="" checked>
                     <span>我同意并遵守《用户注册协议》</span>
-                    <i>同意并注册</i>
                 </div>
                 <div class="loginicon">
-                    <a href="##">注册</a>
+                    <a href="##" id="btn">同意并注册</a>
+                </div>
+                <div class="other">
+                        <a href="./register.html"><p></p></a>
                 </div>
             </div>
         </div>
@@ -57,6 +55,54 @@
 </body>
 <script src="../js/jquery1.12.4.js"></script>
 <script>
+
+
+class Regi{
+        constructor(){
+            this.user = $("#user");
+            this.pass = $("#pass");
+            this.repeat = $("#repeat");
+            this.btn = $("#btn");
+            this.p = $(".other").find("p");
+            this.url = "http://api.icodeilife.cn:81/user";
+            this.addEvent();
+        }
+        addEvent(){
+            var that = this;
+            this.btn.on("click",function(){
+                that.load();
+            })
+        }
+        load(){
+            $.ajax({
+                url:this.url,
+                data:{
+                    type:"register",
+                    user:this.user.val(),
+                    pass:this.pass.val(),
+                    repeat:this.repeat.val(),
+                },
+                success:(res)=>{
+                    // console.log(res)
+                    res = JSON.parse(res);
+                    if(res.code == 0){
+                        this.p.html("<a href='register.html'>注册失败，请重新注册</a>").css({
+                            background:"gold",
+                            font:"18px/18px ''",
+                        })
+                    }else if(res.code == 1){
+                        
+                        this.p.html("注册成功，5秒后自动跳转到<a href='login.html'>登录</a>界面");
+                        setTimeout(()=>{
+                            location.href = "login.html"
+                        },5000)
+                        
+                    }
+                }
+            })
+        }
+    }
+    new Regi();
     $(".quality").load("http://localhost/wjl/load/load.html .quality");
     $(".guide").load("http://localhost/wjl/load/load.html .guide");    
     $(".footer").load("http://localhost/wjl/load/load.html .footer");   

@@ -1,49 +1,12 @@
-$(".ban").banner({
-    items:$(".ban").find("img"),        //必传
-    left:$(".ban").find("#btnL"),       //可选
-    right:$(".ban").find("#btnR"),     //可选
-    autoPlay:true,                          //可选，默认有自动播放
-    delayTime:3000,                         //可选，默认2000
-    moveTime:300,                          //可选，默认300
-    index:0,
-    list:true                                //可选，默认0
-})
 
-$(".col").find("li").hover(function(){
-    $(this).css({background:"#ffcc00"})
-    $(this).children(".hidelist").show()
-},function(){
-    $(this).css({background:"#fff"})
-    $(this).children(".hidelist").hide()
-})
-$(".hidelist-l").find("a").find("span").hover(function(){
-    $(this).css({color:"red"})
-},function(){
-    $(this).css({color:"#000"})
-})
-
-// 选项卡功能
-$(".yester").on("click",function(){
-    $(this).children("a").css({
-        borderBottom:"2px solid #ff5500"
-    }).end().prev(".today").children("a").css({
-        borderBottom:0
-    })
-    $(".yester2").show().siblings(".today2").hide();
-})
-$(".today").on("click",function(){
-    $(this).children("a").css({
-        borderBottom:"2px solid #ff5500"
-    }).end().siblings(".yester").children("a").css({
-        borderBottom:0
-    })
-    $(".today2").show().siblings(".yester2").hide();
-})
-
+    
+$(".aside").load("http://localhost/wjl/load/load.html .asi");
+$(".logo").load("http://localhost/wjl/load/load.html .logo",fn);
+$(".head").load("http://localhost/wjl/load/load.html .header",head);
 class Reqdata{
     constructor(){
-        this.live = document.querySelector(".today2");
-        this.url = "http://localhost/wjl/data/goods.json";
+        this.url = "http://localhost/wjl/data/list.json";
+        this.cen = document.querySelector(".cen")
         this.load()
     }
     load(){
@@ -60,19 +23,14 @@ class Reqdata{
             <a href=""><img src="${this.res[i].url}" alt=""></a>
             <p class="goodsName"><a href="">${this.res[i].tip}</a></p>
             <p class="price">
-                <span class="p-after">${this.res[i].price}</span>
-                <span class="p-before">${this.res[i].oldprice}</span>
+                <span class="pri">${this.res[i].price}</span>
             </p>
         </li>`
         }
-        this.live.innerHTML = str;
+        this.cen.innerHTML = str;
     }
 }
 new Reqdata();
-
-$(".aside").load("http://localhost/wjl/load/load.html .asi");
-$(".logo").load("http://localhost/wjl/load/load.html .logo",fn);
-$(".head").load("http://localhost/wjl/load/load.html .header",head);
 $(".quality").load("http://localhost/wjl/load/load.html .quality");
 $(".guide").load("http://localhost/wjl/load/load.html .guide");
 $(".footer").load("http://localhost/wjl/load/load.html .footer");
@@ -121,5 +79,4 @@ function head(){
         $(".left").show();
     })
 }
-
 
