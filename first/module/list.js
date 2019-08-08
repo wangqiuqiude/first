@@ -1,5 +1,4 @@
 define(function(){
-    // 下拉菜单的效果
     class List{
         constructor(options){
             this.btn = options.allBtn;

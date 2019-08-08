@@ -25,11 +25,11 @@ body{background: #F5F5F5}
 .logo{background: #fff;height: 150px;border-bottom:2px solid black;width: 100%;position: relative;}
 .logo-t{height: 110px;line-height: 110px;position: relative;}
 .logobox a{width: 204px;height: 56px;float: left;display: block;background: url("../image/logo.jpg") no-repeat center;position: absolute;top: 29px;}
-.logo-t .center{width: 466px;height: 42px;border: 2px solid #ffcc00;display: inline-block;position: absolute;left: 320px;top: 36px}
+.logo-t .center{width: 466px;height: 42px;border: 2px solid #ffcc00;display: inline-block;position: absolute;left: 320px;top: 36px;}
 .logo-t .center span{cursor:pointer;display: inline-block;height: 42px;width: 72px;font: 14px/42px "";float: left;text-align: center;color: #999;}
 .logo-t .center i{font: 12px/42px "";text-align: center;color: #999;position: absolute;left: 50px;cursor: pointer;}
 
-.logo-t .opt{width: 55px;height: 50px;padding: 0 5px;position: absolute;top: 76px;left: 325px;background: #fff;z-index: 1;display:none}
+.logo-t .opt{width: 55px;height: 50px;padding: 0 5px;position: absolute;top: 76px;left: 325px;background: #fff;z-index: 1;display:none;}
 .logo-t .opt li{height: 25px;font: 12px/25px "";text-align: center}
 /* .logo-t .opt li:hover{background: #ccc} */
 /* .logo-t .opt .active{background: #ccc} */
@@ -38,7 +38,40 @@ body{background: #F5F5F5}
 
 
 .logo-t .center #ipt{float: left;height: 42px;width: 316px;border: 0;border-left: 1px solid #eeeeee;outline: none;color: #ccc;}
+
+
+#list{
+    width: 388px;height:200px;
+    position: absolute;
+    top: 100%;
+    /* left: px; */
+    left: -2px;
+    border: 2px solid #ffcc00;border-top: none;
+    background: #fff;z-index: 333;
+    overflow: auto;
+    display: none
+}
+
+#list li{
+    font: 16px/28px "";
+    list-style-type: none;
+    line-height: 20px;
+    padding: 6px 5px;
+    
+}
+
+#list li:nth-child(1){
+    border-top: 2px solid #ffcc00;
+}
+
+
+
+
+
+
+
 .logo-t .center #search{float: right;width: 78px;background: #ffcc00;height: 100%;border: 0;color: #333333;font: 14px/42px "";font-weight: 700;outline-style: none;cursor: pointer;}
+
 .logo-t .hot{height: 20px;width: 470px;text-align:center;position: absolute;left: 320px;top: 92px}
 .logo-t .hot a {float: left;height: 20px;font:12px/20px "";margin-right: 10px;}
 .logo-t .call{width: 363px;height: 46px;position: absolute;right: 0;top: 36px}

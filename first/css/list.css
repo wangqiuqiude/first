@@ -5,3 +5,6 @@
 .cen li a img{width: 225px;height: 260px;}
 .cen li .goodsName{height: 40px;font:14px/20px "";}
 .price{height: 30px;font: 14px/30px ""}
+.price .pri{float: left}
+.price .btn{float: left;width: 70px;height: 28px;background: #ff3300;text-align: center;color: #fff}
+.price a{background: #ff3300;text-align: center;color: #fff;float: right;}

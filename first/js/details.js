@@ -62,12 +62,12 @@ var three = document.getElementById("three");
 var img1 = document.querySelector(".s_box img")
 var img2 = document.querySelector(".b_box img")
 one.onclick = function(){
-    img1.src = "../image/f.jpg";
-    img2.src="../image/f.jpg";
+    img1.src = "../image/p.jpg";
+    img2.src="../image/p.jpg";
 }
 two.onclick = function(){
-    img1.src = "../image/g.jpg";
-    img2.src="../image/g.jpg";
+    img1.src = "../image/q.jpg";
+    img2.src="../image/q.jpg";
 }
 
 

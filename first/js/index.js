@@ -103,6 +103,48 @@ function fn(){
         $(this).find("a").not(".aaa").css({color:"#000"})
     })
 
+
+    class Search {
+        constructor(){
+            this.ipt = document.getElementById("ipt");
+            this.list = document.getElementById("list");
+            this.init();
+        }
+        init(){
+            var that= this;
+            this.url = "https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su";
+            this.ipt.onkeyup = function(){
+                that.v = this.value;
+                that.list.style.display = "block";
+                if(that.v == ""){
+                    that.list.style.display = "none";
+                }
+                that.load();
+            }
+        }
+        load(){
+            var that = this;
+            jsonp(this.url,function(res){
+                that.res = res;
+                that.display();
+            },{
+                wd:this.v,
+                cb:"odjjawkdj",
+                columnName:"cb"
+            })
+        }
+        display(){
+            // console.log(this.res.s);
+            var str = "";
+            for(var i =0;i<this.res.s.length;i++){
+                str += `<li>${this.res.s[i]}</li>`;
+            }
+            this.list.innerHTML = str;
+            
+        }
+    }
+    new Search();
+
 }
 
 function head(){

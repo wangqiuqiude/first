@@ -18,12 +18,6 @@ define(function(){
             this.newTop = $(".new").offset().top;
             this.texTop = $(".textiles").offset().top;
             this.eleTop = $(".electric").offset().top;
-
-
-
-
-
-
             this.scTop=0;
             this.addEvent()
         }
