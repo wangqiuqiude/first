@@ -1,0 +1,43 @@
+$col:#fff;
+$bor:#ff5500;
+$b:b_box;
+$width:300px;
+.middle{height: 550px;background: $col;position: relative;}
+.left{width: 400px;float: left;}
+.s_box{width: $width;height: $width;position: absolute;left: 50px;top: 50px}
+        
+.s_box span{position: absolute;left: 0;top: 0;background: rgba(200,200,200,0.6);display: none} 
+        
+.s_box img{width:$width;height:$width;position: absolute;margin: 0 auto}
+        
+.b_box{width: $width;height: 300px;position: absolute;left: 500px;top: 50px;display: none;overflow: hidden; }
+        
+.b_box img{width:900px;position: absolute;}
+
+        
+.x_box{position: absolute;left: 50px;top: 390px;width: 400px;height: 150px;}
+.x_box img{width: 110px;height: 120px;margin: 10px;}
+
+.right{width: 800px;float: right;height: 100%;
+}
+.right h2{height: 80px;line-height: 80px}
+.right p.pri{width: 600px;background: #eee;height: 80px}
+p span{float: left;font:14px/80px "" ;color: #aaa}
+p b{float: left;font: 30px/80px "";color: #ff3300}
+.bottom{height: 100px;padding: 200px 0 0 0}
+.bottom span{
+    font: 20px/40px "";float: left;
+}
+.bottom input{height: 38px;width: 100px;float: left;}
+.bottom a{
+    float: left;
+    border: 1px solid #ccc;
+    display: block;
+    width: 40px;height: 40px;
+    text-align: center;
+    font: 30px/40px ""
+}
+.ing{height: 60px;}
+.ing h1{width:100px;height: 60px;line-height: 60px;float: left;padding:0 10px;}
+.ing .add{padding:0 10px;border:2px solid $bor;height: 60px;color: #ff8800;font: 20px/60px "";margin-right: 20px}
+.ing .shop{background: $bor;height: 62px;color: #$col}

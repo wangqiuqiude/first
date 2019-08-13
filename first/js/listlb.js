@@ -62,7 +62,7 @@ class Shopping{
         var str = "";
         for(var i = 0;i<this.res.length;i++ ){
             str += `<li>
-            <a href=""><img src="${this.res[i].url}" alt=""></a>
+            <a href="details.html"><img src="${this.res[i].url}" alt=""></a>
             <p class="goodsName"><a href="">${this.res[i].tip}</a></p>
             <p class="price" zxc="${this.res[i].goodsId}">
                 <span class="pri">${this.res[i].price}</span>
